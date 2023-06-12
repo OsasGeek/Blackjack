@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat+Alternates:wght@100&family=Oswald:wght@200;300;700&family=Playfair:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Arvo', serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Playfair', serif;
+    }
+}

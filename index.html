@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat+Alternates:wght@100&family=Oswald:wght@200;300;700&family=Playfair:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="m-0 font-custom">
+  <div class="bg-in h-full bg-cover p-3 ring-1 ring-slate-900/5 shadow-xl w-full block">
+    <div class="bg-transparent w-auto mr-auto ml-auto mt-4 h-fit rounded-xl shadow-2xl shadow-green-950 p-4 border-solid border-rose-300 border">
+      <h1 class="text-center font-extrabold text-5xl mb-5 text-lime-100 drop-shadow-lg"> Blackjack </h1>
+      <section class="text-center text-white italic" id="message-el">Do you want to play a round</section>
+      <span class="block text-center mr-auto ml-auto mb-5">Cards:</span>
+      <div class="flex flex-row mr-auto ml-auto justify-center h-60 flex-wrap mb-10" id="cardsHolder">
+        <img class="w-auto md:w-32 lg:w-auto" src="src/start.png" />
+      </div>
+      <div class="flex flex-row mr-auto ml-auto justify-center text-white" id="sum-el">Sum:</div>
+      <div class="flex flex-col justify-center flex-wrap" >
+        <button class="block text-center mr-auto ml-auto p-2 rounded-xl bg-lime-200 font-bold shadow-xl w-52  h-auto m-1" onclick="startGame()">START GAME</button>
+        <button class="block text-center mr-auto ml-auto p-2 rounded-xl bg-lime-200 font-bold shadow-xl w-52  h-auto m-1" onclick="newCard()">NEW CARD</button>
+        <div id="player-el" class="block text-center mt-4 text-lime-200"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/src/index.js"></script>
+</body>
+</html>
